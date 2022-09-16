@@ -43,6 +43,42 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/ASP/studentFreelance/studentFreelance/Views/client/Add.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcY2xpZW50XEFkZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ASP/studentFreelance/studentFreelance/Views/client/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcY2xpZW50XEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ASP/studentFreelance/studentFreelance/Views/freelancers/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcZnJlZWxhbmNlcnNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ASP/studentFreelance/studentFreelance/Views/freelancers/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcZnJlZWxhbmNlcnNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ASP/studentFreelance/studentFreelance/Views/freelancers/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcZnJlZWxhbmNlcnNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ASP/studentFreelance/studentFreelance/Views/freelancers/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcZnJlZWxhbmNlcnNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ASP/studentFreelance/studentFreelance/Views/freelancers/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcZnJlZWxhbmNlcnNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ASP/studentFreelance/studentFreelance/Views/Gig/Add.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2lnXEFkZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ASP/studentFreelance/studentFreelance/Views/Gig/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2lnXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/ASP/studentFreelance/studentFreelance/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

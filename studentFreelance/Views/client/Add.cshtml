@@ -1,0 +1,23 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@using Microsoft.AspNetCore.Identity
+@inject SignInManager<IdentityUser> SignInManager
+@inject UserManager<IdentityUser> UserManager
+<form method="post" action="Add">
+    <div class="form-group">
+        <label for="name">Enter your name</label>
+        <input type="text" class="form-control" name="name" id="name" placeholder="Enter name">
+    </div>
+    <div class="form-outline">
+        <label class="form-label" for="email">Email address</label>
+        <input type="email" disabled value="@User.Identity?.Name" id="email" class="form-control"/>
+  </div>
+    <div class="form-group">
+        <label for="phno">Phone number</label>
+        <input type="text" class="form-control" id="phno" name="phno" placeholder="Enter Phone number">
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>

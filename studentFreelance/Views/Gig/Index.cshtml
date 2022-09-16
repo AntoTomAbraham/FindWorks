@@ -1,0 +1,32 @@
+﻿@model List<studentFreelance.Models.Gig>
+@{
+}
+@using Microsoft.AspNetCore.Identity
+@inject SignInManager<IdentityUser> SignInManager
+@inject UserManager<IdentityUser> UserManager
+
+<h1>Gigs</h1>
+<table class="table"> 
+    <thead>
+        <tr>
+            <th>Title</th>
+            <th>Description</th>
+            <th>Amount</th>
+        <tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            @if (@User.Identity?.Name == @item.email)
+            {
+                <tr>
+                <td>@item.title</td>
+                <td>@item.desc</td>
+                <td>@item.amount</td>
+            </tr>
+            }
+        }
+    </tbody>
+</table>
+
+    <a class="nav-link" asp-area="" asp-controller="Gig" asp-action="Add">Post a new Gig</a>

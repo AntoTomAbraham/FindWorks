@@ -1,6 +1,14 @@
-﻿@{
+﻿@using Microsoft.AspNetCore.Identity
+@inject SignInManager<IdentityUser> SignInManager
+@inject UserManager<IdentityUser> UserManager
+
+@{
     ViewData["Title"] = "Home Page";
+    //var name = User.Identity.GetUserName();
+    //var user = UserManager.FindById(User.Identity.GetUserId());
+    //var email = user.Email;
 }
+
 
 <div class="text-center">
     <h1 class="display-4"><strong>Freelanco</strong></h1>
@@ -10,14 +18,20 @@
             <div class="card-body">
                 <h5 class="card-title">Freelancer</h5>
                 <p class="card-text">Are you a freelancer looking for projects</p>
-                <a href="#" class="btn btn-primary">Freelancer</a>
+                @if (SignInManager.IsSignedIn(User))
+                {
+                    <a href="freelancers/Details/@User.Identity?.Name" class="btn btn-primary">Freelancer</a>
+                }
             </div>
         </div>
         <div class="card" style="width: 18rem;">
             <div class="card-body">
                 <h5 class="card-title"> Client </h5>
                 <p class="card-text">Are you a client looking for freelancers</p>
-                <a href="#" class="btn btn-primary">Client</a>
+                @if (SignInManager.IsSignedIn(User))
+                {
+                    <a href="client/Add/" class="btn btn-primary">Client</a>
+                }
             </div>
         </div>
     </div>
