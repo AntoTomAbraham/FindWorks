@@ -1,0 +1,72 @@
+﻿@model studentFreelance.Models.testQuestionModule
+@{
+}
+@using Microsoft.AspNetCore.Identity
+@inject SignInManager<IdentityUser> SignInManager
+@inject UserManager<IdentityUser> UserManager
+<form method="post" action="Add">
+    <h5>Q1 Look at this series: 12, 11, 13, 12, 14, 13, … What number should come next?</h5>
+    <div class="row-cols-6">
+        <input type="checkbox" id="vehicle1" name="q1" value="10">
+        <label for="vehicle1">10</label><br>
+        <input type="checkbox" id="vehicle2" name="q1" value="16">
+        <label for="vehicle2">16</label><br>
+        <input type="checkbox" id="vehicle3" name="q1" value="15">
+        <label for="vehicle3">15</label><br><br>
+    </div
+    <h5>Q2 Which word does NOT belong with the others?</h5>
+    <div class="row-cols-6">
+        <input type="checkbox" id="vehicle1" name="q1" value="index">
+        <label for="vehicle1">index</label><br>
+        <input type="checkbox" id="vehicle2" name="q1" value="Glossary">
+        <label for="vehicle2">Glossary</label><br>
+        <input type="checkbox" id="vehicle3" name="q2" value="Book">
+        <label for="vehicle3">Book</label><br><br>
+    </div>
+    <h5>Q3 CUP : LIP :: BIRD : ?</h5>
+    <div class="row-cols-6">
+        <input type="checkbox" id="vehicle1" name="q1" value="Bike">
+        <label for="vehicle1">Cup</label><br>
+        <input type="checkbox" id="vehicle2" name="q1" value="Car">
+        <label for="vehicle2">Leak</label><br>
+        <input type="checkbox" id="vehicle3" name="q3" value="Beak">
+        <label for="vehicle3">Beak</label><br><br>
+    </div>
+    <h5>Q4 Parts : Strap :: Wolf :</h5>
+    <div class="row-cols-6">
+        <input type="checkbox" id="vehicle1" name="q4" value="flow">
+        <label for="vehicle1">Flow</label><br>
+        <input type="checkbox" id="vehicle2" name="q1" value="Car">
+        <label for="vehicle2">Animal</label><br>
+        <input type="checkbox" id="vehicle3" name="q1" value="f">
+        <label for="vehicle3">Food</label><br><br>
+    </div>
+    <h5>Q5 Pick the odd man out?</h5>
+    <div class="row-cols-6">
+        <input type="checkbox" id="vehicle1" name="q1" value="Bike">
+        <label for="vehicle1">Just</label><br>
+        <input type="checkbox" id="vehicle2" name="q1" value="Car">
+        <label for="vehicle2">Fair</label><br>
+        <input type="checkbox" id="vehicle3" name="q5" value="baised">
+        <label for="vehicle3">baised</label><br><br>
+    </div>
+    <h5>Q6 Look at this series: 80, 10, 70, 15, 60, … What number should come next?</h5>
+    <div class="row-cols-6">
+        <input type="checkbox" id="vehicle1" name="q6" value="20">
+        <label for="vehicle1">20</label><br>
+        <input type="checkbox" id="vehicle2" name="q1" value="Car">
+        <label for="vehicle2">30</label><br>
+        <input type="checkbox" id="vehicle3" name="q1" value="Boat">
+        <label for="vehicle3">70</label><br><br>
+    </div>
+    <h5>Q7 Which word is the odd man out?</h5>
+    <div class="row-cols-6">
+        <input type="checkbox" id="vehicle1" name="q7" value="important">
+        <label for="vehicle1">important</label><br>
+        <input type="checkbox" id="vehicle2" name="q1" value="Car">
+        <label for="vehicle2">unimportant</label><br>
+        <input type="checkbox" id="vehicle3" name="q1" value="Boat">
+        <label for="vehicle3">trivial</label><br><br>
+    </div>
+    <button type="submit" class="btn btn-primary btn-block mb-4">Submit</button>
+</form>

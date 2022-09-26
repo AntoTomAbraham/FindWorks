@@ -67,6 +67,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcZnJlZWxhbmNlcnNcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/ASP/studentFreelance/studentFreelance/Views/freelancers/home.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcZnJlZWxhbmNlcnNcaG9tZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/ASP/studentFreelance/studentFreelance/Views/freelancers/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcZnJlZWxhbmNlcnNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -79,12 +83,32 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2lnXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/ASP/studentFreelance/studentFreelance/Views/Gig/myIndex.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2lnXG15SW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/ASP/studentFreelance/studentFreelance/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/ASP/studentFreelance/studentFreelance/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ASP/studentFreelance/studentFreelance/Views/Project/Add.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvamVjdFxBZGQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ASP/studentFreelance/studentFreelance/Views/Project/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvamVjdFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ASP/studentFreelance/studentFreelance/Views/Project/viewmyProjects.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvamVjdFx2aWV3bXlQcm9qZWN0cy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ASP/studentFreelance/studentFreelance/Views/Project/viewProjects.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvamVjdFx2aWV3UHJvamVjdHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/ASP/studentFreelance/studentFreelance/Views/Shared/Error.cshtml]
@@ -97,6 +121,18 @@ build_metadata.AdditionalFiles.CssScope =
 
 [D:/ASP/studentFreelance/studentFreelance/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ASP/studentFreelance/studentFreelance/Views/test/Add.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcdGVzdFxBZGQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ASP/studentFreelance/studentFreelance/Views/test/home.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcdGVzdFxob21lLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ASP/studentFreelance/studentFreelance/Views/test/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcdGVzdFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/ASP/studentFreelance/studentFreelance/Views/_ViewImports.cshtml]

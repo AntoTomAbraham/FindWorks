@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using studentFreelance.Models;
 
@@ -11,9 +12,10 @@ using studentFreelance.Models;
 namespace studentFreelance.Migrations
 {
     [DbContext(typeof(FreelancerDBcontext))]
-    partial class FreelancerDBcontextModelSnapshot : ModelSnapshot
+    [Migration("20220919172126_test migration")]
+    partial class testmigration
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -50,41 +52,6 @@ namespace studentFreelance.Migrations
                     b.HasKey("email");
 
                     b.ToTable("freelancer");
-                });
-
-            modelBuilder.Entity("studentFreelance.Models.Project", b =>
-                {
-                    b.Property<Guid>("prID")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<string>("amount")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(200)");
-
-                    b.Property<string>("deadline")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(200)");
-
-                    b.Property<string>("desc")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(200)");
-
-                    b.Property<string>("email")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("status")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(20)");
-
-                    b.Property<string>("title")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(200)");
-
-                    b.HasKey("prID");
-
-                    b.ToTable("project");
                 });
 
             modelBuilder.Entity("studentFreelance.Models.testModels", b =>

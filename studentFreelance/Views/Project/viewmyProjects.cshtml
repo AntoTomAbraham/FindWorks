@@ -1,0 +1,33 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+@model IEnumerable<studentFreelance.Models.Project>
+@using Microsoft.AspNetCore.Identity
+@inject SignInManager<IdentityUser> SignInManager
+@inject UserManager<IdentityUser> UserManager
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>View Project</h1>
+
+@foreach (var item in Model)
+{
+    if (item.email == @User.Identity?.Name){
+    <div class="card">
+        <div class="card-header">
+            @item.title
+        </div>
+        <div class="card-body">
+            <h5 class="card-title">@item.desc</h5>
+            <p class="card-text">Project Deadline : @item.deadline</p>
+            <p class="card-text">Project Budget   : @item.amount</p>
+            <a href="#" class="btn btn-primary">Delete</a>
+        </div>
+    </div>
+}
+}
+

@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using studentFreelance.Models;
 
@@ -11,9 +12,10 @@ using studentFreelance.Models;
 namespace studentFreelance.Migrations
 {
     [DbContext(typeof(FreelancerDBcontext))]
-    partial class FreelancerDBcontextModelSnapshot : ModelSnapshot
+    [Migration("20220919174234_project migration")]
+    partial class projectmigration
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

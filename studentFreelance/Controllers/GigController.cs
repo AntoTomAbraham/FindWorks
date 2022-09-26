@@ -24,7 +24,11 @@ namespace studentFreelance.Controllers
             var gigs = await gigdb.gig.ToListAsync();
             return View(gigs);
         }
-
+        public async Task<IActionResult> myIndex()
+        {
+            var gigs = await gigdb.gig.ToListAsync();
+            return View(gigs);
+        }
 
         [HttpGet]
         public IActionResult Add()
@@ -39,7 +43,7 @@ namespace studentFreelance.Controllers
             {
                 amount = req.amount,
                 desc = req.desc,
-                email = req.email,
+                email = @User.Identity?.Name,
                 title = req.title
             };
             await gigdb.gig.AddAsync(gig);

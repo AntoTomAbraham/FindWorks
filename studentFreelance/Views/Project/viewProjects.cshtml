@@ -1,0 +1,23 @@
+﻿@model IEnumerable<studentFreelance.Models.Project>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>View Project</h1>
+
+@foreach (var item in Model){
+    <div class="card">
+        <div class="card-header">
+            @item.title
+        </div>
+        <div class="card-body">
+            <h5 class="card-title">@item.desc</h5>
+            <p class="card-text">Project Deadline : @item.deadline</p>
+            <p class="card-text">Project Budget   : @item.amount</p>
+            <a href="#" class="btn btn-primary">Bid</a>
+        </div>
+    </div>
+    <br />
+}
+

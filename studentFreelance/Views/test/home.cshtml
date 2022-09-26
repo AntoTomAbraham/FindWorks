@@ -1,0 +1,35 @@
+﻿@model List<studentFreelance.Models.testModels>
+@using Microsoft.AspNetCore.Identity
+@inject SignInManager<IdentityUser> SignInManager
+@inject UserManager<IdentityUser> UserManager
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+<div class="text-center">
+    <h2>Take test and increase your possibility to get hired</h2>
+    <h4>You are only allowed to take test once in every 4 months</h4>
+    @foreach (var item in Model)
+        {
+        if (item.email == @User.Identity?.Name && DateTime.Now.Subtract(@item.DateOfSubmission.Date).Days>120)
+        {
+            System.Diagnostics.Debug.WriteLine("Here is the date diff");
+            System.Diagnostics.Debug.WriteLine(DateTime.Now.CompareTo(item.DateOfSubmission));
+            <h5> DateTime.Now.CompareTo(item.DateOfSubmission)</h5>
+            <a type="button" href="Add/" class="btn btn-success">Take Test now </a>
+           
+        }
+        else if (item.email == @User.Identity?.Name && DateTime.Now.Subtract(@item.DateOfSubmission.Date).Days < 120)
+        {
+            <h5>Your current test score is @item.point</h5>
+            <h3>You took test on @item.DateOfSubmission.Date</h3>
+          
+           
+        }else{
+            <a type="button" href="Add/" class="btn btn-success">Take Test now !! </a>
+        }
+       
+    }
+</div>

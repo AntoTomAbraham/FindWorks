@@ -1,0 +1,54 @@
+﻿@model studentFreelance.Models.Project
+@{
+}
+@using Microsoft.AspNetCore.Identity
+@inject SignInManager<IdentityUser> SignInManager
+@inject UserManager<IdentityUser> UserManager
+<form method="post" action="Add">
+    <!-- 2 column grid layout with text inputs for the first and last names -->
+    <div class="row mb-3">
+        <div class="col">
+            <div class="form-outline">
+                <label class="form-label" for="title">Title</label>
+                <input type="text" id="title" class="form-control" asp-for="title" />
+            </div>
+        </div>
+        <div class="col">
+            <div class="form-outline">
+                <input type="text" id="amount" class="form-control" asp-for="amount" />
+                <label class="form-label" for="amount" as>Amount</label>
+            </div>
+        </div>
+    </div>
+
+    <!-- Email input -->
+    <div class="form-outline mb-4">
+        <input type="email" disabled value="@User.Identity?.Name" id="form3Example3" class="form-control" asp-for="email" />
+        <label class="form-label" for="form3Example3">Email address</label>
+    </div>
+
+    <div class="form-outline mb-4">
+        <input type="desc" id="desc" class="form-control" asp-for="desc" />
+        <label class="form-label" for="desc">Description</label>
+    </div>
+
+    <div class="form-outline mb-4">
+        <input type="number" id="deadline" class="form-control" asp-for="deadline" />
+        <label class="form-label" for="deadline">Description</label>
+    </div>
+
+
+
+    <!-- Password input -->
+    <!-- Checkbox -->
+    <div class="form-check d-flex justify-content-center mb-4">
+    </div>
+    <a class="nav-link" asp-area="" asp-controller="project" asp-action="viewmyProjects">View my project</a>
+
+
+    <!-- Submit button -->
+    <button type="submit" class="btn btn-primary btn-block mb-4">Post Your Project</button>
+
+    <!-- Register buttons -->
+
+</form>

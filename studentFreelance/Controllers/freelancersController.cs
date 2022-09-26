@@ -21,9 +21,14 @@ namespace studentFreelance.Controllers
         // GET: freelancers
         public async Task<IActionResult> Index()
         {
-              return _context.freelancer != null ? 
-                          View(await _context.freelancer.ToListAsync()) :
+            return _context.freelancer != null ?
+                        View(await _context.freelancer.ToListAsync()):
                           Problem("Entity set 'FreelancerDBcontext.freelancer'  is null.");
+        }
+        // GET: freelancers
+        public async Task<IActionResult> home()
+        {
+            return View();
         }
 
         // GET: freelancers/Details/5

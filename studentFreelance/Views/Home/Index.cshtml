@@ -7,11 +7,11 @@
     //var name = User.Identity.GetUserName();
     //var user = UserManager.FindById(User.Identity.GetUserId());
     //var email = user.Email;
+    //Details/@User.Identity?.Name
 }
 
-
 <div class="text-center">
-    <h1 class="display-4"><strong>Freelanco</strong></h1>
+    <h1 class="display-4"><strong>Find Works</strong></h1>
     <p>Earn while you learn</p>
     <div class="row justify-content-evenly">
         <div class="card" style="width: 18rem;">
@@ -20,7 +20,7 @@
                 <p class="card-text">Are you a freelancer looking for projects</p>
                 @if (SignInManager.IsSignedIn(User))
                 {
-                    <a href="freelancers/Details/@User.Identity?.Name" class="btn btn-primary">Freelancer</a>
+                    <a href="freelancers/home/" class="btn btn-dark">Freelancer</a>
                 }
             </div>
         </div>
@@ -30,7 +30,7 @@
                 <p class="card-text">Are you a client looking for freelancers</p>
                 @if (SignInManager.IsSignedIn(User))
                 {
-                    <a href="client/Add/" class="btn btn-primary">Client</a>
+                    <a href="client/" class="btn btn-dark">Client</a>
                 }
             </div>
         </div>
