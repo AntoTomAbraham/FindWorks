@@ -4,6 +4,7 @@
 @using Microsoft.AspNetCore.Identity
 @inject SignInManager<IdentityUser> SignInManager
 @inject UserManager<IdentityUser> UserManager
+
 <form method="post" action="Add">
     <!-- 2 column grid layout with text inputs for the first and last names -->
     <div class="row mb-3">
@@ -15,8 +16,8 @@
         </div>
         <div class="col">
             <div class="form-outline">
-                <input type="text" id="amount" class="form-control" asp-for="amount" />
                 <label class="form-label" for="amount" as>Amount</label>
+                <input type="text" id="amount" class="form-control" asp-for="amount" />
             </div>
         </div>
     </div>

@@ -1,0 +1,60 @@
+﻿@model List<studentFreelance.Models.Bids>
+@{
+}
+@using Microsoft.AspNetCore.Identity
+@inject SignInManager<IdentityUser> SignInManager
+@inject UserManager<IdentityUser> UserManager
+
+
+<h1>View All your Bidsssssssss</h1>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Deadline</th>
+            <th>Description</th>
+                <th>Email</th>
+            <th>Amount</th>
+        <tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            @if (@ViewBag.MyString == @item.prID)
+            {
+                <tr>
+                    <td>
+                        @item.deadline
+                     </td>       
+                    <td>
+                        @item.desc
+                    </td>
+                     <td>
+                        @item.FRemail
+                    </td>
+                        <td>
+                            @item.amount
+                            </td>
+                        <td>
+                        <a href="#" class="btn btn-primary">Message</a>
+                    </td>
+                    <td>
+                        <form method="post" asp-action="AddAlocation">
+                            <input class="form-check-input" type="checkbox" name="deadline" id="deadline" value="@item.deadline">
+                            <input class="form-check-input" type="checkbox" name="amount" id="amount" value="@item.amount">
+                            <input class="form-check-input" type="checkbox" name="prID" id="prID" value="@item.prID">
+                            <input class="form-check-input" type="checkbox" name="desc" id="desc" value="@item.desc">
+                            <input class="form-check-input" type="checkbox" name="FRemail" id="FRemail" value="@item.FRemail">
+                            <button type="submit" class="btn btn-primary">Allocate Project</button>
+                        </form>
+                    </td>
+                </tr>
+             
+            }
+        }
+    </tbody>
+</table>
+<a class="nav-link" asp-area="" asp-controller="Gig" asp-action="Add">Post a new Gig</a>
+
+<script type="text/javascript">
+    document.getElementById('prID').value = @ViewBag.MyString;
+</script>

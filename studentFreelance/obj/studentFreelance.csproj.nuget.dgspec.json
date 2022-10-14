@@ -64,9 +64,17 @@
               "target": "Package",
               "version": "[6.0.8, )"
             },
+            "Microsoft.Owin": {
+              "target": "Package",
+              "version": "[4.2.2, )"
+            },
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
               "version": "[6.0.8, )"
+            },
+            "Razorpay": {
+              "target": "Package",
+              "version": "[3.0.0, )"
             }
           },
           "imports": [

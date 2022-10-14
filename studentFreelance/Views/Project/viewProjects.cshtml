@@ -15,7 +15,7 @@
             <h5 class="card-title">@item.desc</h5>
             <p class="card-text">Project Deadline : @item.deadline</p>
             <p class="card-text">Project Budget   : @item.amount</p>
-            <a href="#" class="btn btn-primary">Bid</a>
+            <a class="btn btn-info" asp-controller="Bid" asp-action="Index" asp-route-id="@item.prID">BID</a>
         </div>
     </div>
     <br />

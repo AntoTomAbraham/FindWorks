@@ -1,0 +1,8 @@
+﻿@model studentFreelance.ConnectedUsers;
+
+<div class="col-2"><h2>Online Connected User List</h2></div>
+
+@foreach (var user in studentFreelance.ConnectedUsers.myConnectedUsers)
+{
+    <li>@user;</li>
+}

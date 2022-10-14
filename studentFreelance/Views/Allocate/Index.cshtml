@@ -1,0 +1,44 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<form method="post" action="Allocation">
+<div class="form-check">
+        <input class="form-check-input" name="prid" id="prid" value="@ViewBag.prid" type="checkbox" id="gridCheck">
+        <label class="form-check-label" for="gridCheck">
+        Check me out
+    </label>
+</div>
+ <div class="form-check">
+      <input class="form-check-input" name="amount" id="amount" value="@ViewBag.amount" type="checkbox" id="gridCheck">
+     <label class="form-check-label" for="gridCheck">
+          Check me out
+     </label>
+</div>
+<div class="form-check">
+    <input class="form-check-input" name="deadline" id="deadline" value="@ViewBag.deadline" type="checkbox" id="gridCheck">
+    <label class="form-check-label" for="gridCheck">
+        Check me out
+    </label>
+</div>
+<div class="form-check">
+    <input class="form-check-input" name="FRemail" id="FRemail" value="@ViewBag.email" type="checkbox" id="gridCheck">
+    <label class="form-check-label" for="gridCheck">
+        Check me out
+    </label>
+</div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+<script type="text/javascript">
+document.getElementById('prid').value = @ViewBag.prid;
+</script>
+ <script type="text/javascript">
+document.getElementById('amount').value = @ViewBag.amount;
+</script>
+<script type="text/javascript">
+    document.getElementById('deadline').value = @ViewBag.deadline;
+</script>
+<script type="text/javascript">
+    document.getElementById('FRemail').value = @ViewBag.email;
+</script>

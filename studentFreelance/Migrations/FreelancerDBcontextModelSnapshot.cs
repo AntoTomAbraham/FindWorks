@@ -22,6 +22,36 @@ namespace studentFreelance.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1L, 1);
 
+            modelBuilder.Entity("studentFreelance.Models.Bids", b =>
+                {
+                    b.Property<Guid>("bid")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("FRemail")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("amount")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(200)");
+
+                    b.Property<string>("deadline")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(200)");
+
+                    b.Property<string>("desc")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(200)");
+
+                    b.Property<Guid>("prID")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.HasKey("bid");
+
+                    b.ToTable("bids");
+                });
+
             modelBuilder.Entity("studentFreelance.Models.freelancer", b =>
                 {
                     b.Property<string>("email")

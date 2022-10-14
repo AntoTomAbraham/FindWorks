@@ -36,6 +36,7 @@ namespace studentFreelance.Controllers
             return View();
         }
 
+        
         [HttpPost]
         public async Task<IActionResult> Add(AddgigViewmodel req)
         {

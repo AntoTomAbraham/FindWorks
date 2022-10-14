@@ -1,0 +1,41 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+@model IEnumerable<studentFreelance.Models.Allocate>
+@using Microsoft.AspNetCore.Identity
+@inject SignInManager<IdentityUser> SignInManager
+@inject UserManager<IdentityUser> UserManager
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>View Project</h1>
+
+@foreach (var item in Model)
+{
+    if (item.FRemail == @User.Identity?.Name)
+    {
+        <div class="card">
+            <div class="card-header">
+                Freelancer Email :  @item.FRemail
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">Project ID : @item.prID</h5>
+                <p class="card-text">Project Status : @item.status</p>
+                <p class="card-text">Project Deadline : @item.deadline</p>
+                <p class="card-text">Project Budget   : @item.amount</p>
+                <a href="#" class="btn btn-info">View Project</a>
+                <a class="btn btn-info" asp-area="" asp-controller="Chat" asp-action="Index">Chat</a>
+            </div>
+        </div>
+        <br />
+    }
+}

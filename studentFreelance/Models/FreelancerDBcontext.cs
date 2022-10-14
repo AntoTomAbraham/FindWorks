@@ -12,5 +12,6 @@ namespace studentFreelance.Models
         public DbSet<freelancer> freelancer { get; set; }
         public DbSet<testModels> test { get; set; }
         public DbSet<Project> project { get; set; }
+        
     }
 }

@@ -10,5 +10,7 @@ namespace studentFreelance.Models
         }
 
         public DbSet<Gig> gig { get; set; }
+        public DbSet<Bids> bids { get; set; }
+        public DbSet<Allocate> allo { get; set; }
     }
 }

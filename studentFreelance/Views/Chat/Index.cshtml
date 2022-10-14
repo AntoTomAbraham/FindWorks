@@ -1,0 +1,46 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@{
+    ViewData["Title"] = "Home Page";
+}
+<div class="container">
+    <div class="row">
+        <div class="col-6">
+            <ul class="list-group-item list-group-item-info p-4" id="messagesList"></ul>
+        </div>
+    </div>
+    <hr />
+    <div class="row">&nbsp;</div>
+    
+    <div class="row">
+        <div hidden class="col-2">User</div>
+        <div hidden class="col-4"><input type="text" id="userInput" /></div>
+    </div>
+    
+    <div class="row">
+        <div class="col-2">Type a Message</div>
+        <div class="col-4">
+            <input type="text" id="messageInput" class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-sm" />
+         </div>
+    </div>
+    <div class="row">&nbsp;</div>
+    <div class="row">
+        <div class="col-6">
+            <input type="button" id="sendButton" class="btn btn-success" value="Send Message" />
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-12">
+       
+    </div>
+</div>
+<div class="row">
+   
+</div>
+
+<script src="~/js/signalr/dist/browser/signalr.js"></script>
+<script src="~/js/clientHub.js"></script>
