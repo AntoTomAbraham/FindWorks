@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "9XF1WeqLGr/e47ogue19qjd/bF1hmcaKEO62cgqVmwL34Pa1vrXeiTQ+E5k9ZTG5ua6j0KfvP76FMcrV49p2TA==",
+  "dgSpecHash": "JoLKisgnQbCmkLNjLJIi9HY6DKP5Gjfx63yiTjR306S0aGYaEEQW4/trOjhAkGb/QTKZul8dC3d//fh3jppicw==",
   "success": true,
   "projectFilePath": "D:\\ASP\\studentFreelance\\studentFreelance\\studentFreelance.csproj",
   "expectedPackageFiles": [
@@ -108,6 +108,7 @@
     "C:\\Users\\91854\\.nuget\\packages\\runtime.ubuntu.14.04-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.ubuntu.14.04-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
     "C:\\Users\\91854\\.nuget\\packages\\runtime.ubuntu.16.04-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.ubuntu.16.04-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
     "C:\\Users\\91854\\.nuget\\packages\\runtime.ubuntu.16.10-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.ubuntu.16.10-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
+    "C:\\Users\\91854\\.nuget\\packages\\stripe.net\\40.13.0\\stripe.net.40.13.0.nupkg.sha512",
     "C:\\Users\\91854\\.nuget\\packages\\system.appcontext\\4.3.0\\system.appcontext.4.3.0.nupkg.sha512",
     "C:\\Users\\91854\\.nuget\\packages\\system.buffers\\4.3.0\\system.buffers.4.3.0.nupkg.sha512",
     "C:\\Users\\91854\\.nuget\\packages\\system.collections\\4.3.0\\system.collections.4.3.0.nupkg.sha512",

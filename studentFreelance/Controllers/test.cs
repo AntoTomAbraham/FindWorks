@@ -23,6 +23,18 @@ namespace studentFreelance.Controllers
             return View();
         }
 
+        public async Task<IActionResult> viewScore(String id)
+        {
+            var freelancer = await _context.test
+               .FirstOrDefaultAsync(m => m.email == id);
+            if (freelancer == null)
+            {
+                return NotFound();
+            }
+
+            return View(freelancer);
+        }
+
         [HttpGet]
         public async Task<IActionResult> Home()
         {

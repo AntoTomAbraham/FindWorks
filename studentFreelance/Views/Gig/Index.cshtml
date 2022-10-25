@@ -17,6 +17,8 @@
             <h5 class="card-title">Description: @item.desc</h5>
             <p class="card-text">Budget     :@item.amount</p>
             <a class="btn btn-info" asp-area="" asp-controller="Chat" asp-action="Index">Chat</a>
+            <a class="btn btn-info" href="freelancers/Details/@item.email">View Freelancers Detais</a>
+            <a class="btn btn-info" href="test/viewScore/@item.email">View Freelancers test score</a>
         </div>
     </div>
     <br />

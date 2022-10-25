@@ -28,8 +28,18 @@ namespace studentFreelance.Controllers
         {
             return View(await allodb.allo.ToListAsync());
         }
+        [HttpGet]
+        public async Task<IActionResult> completeWork(Guid allID)
+        {
+          
+                var user = allodb.allo.Where(u => u.allId == allID).FirstOrDefault();
+                user.status = "Completed";
+                allodb.SaveChanges();
+           
+            return View();
+        }
 
-        [HttpPost]
+            [HttpPost]
         public async Task<IActionResult> allocate(Allocate req)
         {
             var allo = new Allocate()

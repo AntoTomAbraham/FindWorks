@@ -1,0 +1,13 @@
+﻿@model studentFreelance.Models.testModels
+@{
+}
+@using Microsoft.AspNetCore.Identity
+@inject SignInManager<IdentityUser> SignInManager
+@inject UserManager<IdentityUser> UserManager
+
+
+
+
+    
+@Html.DisplayFor(model => model.point)
+@Html.DisplayFor(model => model.DateOfSubmission)

@@ -75,6 +75,10 @@
             "Razorpay": {
               "target": "Package",
               "version": "[3.0.0, )"
+            },
+            "Stripe.net": {
+              "target": "Package",
+              "version": "[40.13.0, )"
             }
           },
           "imports": [

@@ -27,10 +27,9 @@
                  <p class="card-text">Project Status : @item.status</p>
                 <p class="card-text">Project Deadline : @item.deadline</p>
                 <p class="card-text">Project Budget   : @item.amount</p>
-                <a href="#" class="btn btn-info">View Project</a>
+                <!--  <a href="#" class="btn btn-info">View Project</a>-->
                 <a class="btn btn-info" asp-area="" asp-controller="Chat" asp-action="Index">Chat</a>
-                <a class="btn btn-info" asp-area="" asp-controller="payment" asp-action="index">Pay now</a>
-                <a href="#" class="btn btn-secondary">Project Completed!</a>
+                <a class="btn btn-info" asp-area="" asp-controller="payment" asp-action="pay">Pay now</a>           
             </div>
         </div>
         <br />

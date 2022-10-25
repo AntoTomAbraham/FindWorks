@@ -34,13 +34,84 @@ namespace studentFreelance.Controllers
             return RedirectToAction("Index");
             
         }
+        [HttpPost]
+        public async Task<IActionResult> allocateWork(Project pro)
+        {
+            var ent = _context.Set<Project>().SingleOrDefault(u => u.prID == pro.prID);
+            ent.status = "allocated";
+            _context.Entry(ent).Property(x => x.status).IsModified = true;
+            //var pr = _context.project.Where(u => u.prID == prId).FirstOrDefault();
+            //pr.status = "allocated";
+            _context.SaveChanges();
+            return RedirectToAction("Index");
+        }
+        
         [HttpGet]
         public IActionResult Add()
         {
             return View();
 
         }
+        [HttpGet]
+        public async Task<IActionResult> makeAllocated(Guid id)
+        {
+            ViewBag.MyString = id;
+            var pro = await _context.project.FirstOrDefaultAsync(m => m.prID == id);
+            if(pro == null) { }
+            return View(pro);
+        }
+        [HttpPost]
+        public async Task<IActionResult> makeAllocated(Project pro)
+        {
+            var proj = await _context.project.FindAsync(pro.prID);
+            if (proj != null) {
+                proj.email = @User.Identity?.Name;
+                proj.desc = pro.desc;
+                proj.title = pro.title;
+                proj.amount = pro.amount;
+                proj.status = "Allocated";
+                proj.deadline = pro.deadline;
+                proj.prID = pro.prID;
+                await _context.SaveChangesAsync();
+                return RedirectToAction("Index");
+            }
+            return RedirectToAction("Index");
+        }
+        public async Task<IActionResult> makeDeleted(Guid id)
+        {
+            ViewBag.MyString = id;
+            var pro = await _context.project.FirstOrDefaultAsync(m => m.prID == id);
+            if (pro == null) { }
+            return View(pro);
+        }
+        [HttpPost]
+        public async Task<IActionResult> makeDeleted(Project pro)
+        {
+            var proj = await _context.project.FindAsync(pro.prID);
+            if (proj != null)
+            {
+                proj.email = @User.Identity?.Name;
+                proj.desc = pro.desc;
+                proj.title = pro.title;
+                proj.amount = pro.amount;
+                proj.status = "Deleted";
+                proj.deadline = pro.deadline;
+                proj.prID = pro.prID;
+                await _context.SaveChangesAsync();
+                return RedirectToAction("Index");
+            }
+            return RedirectToAction("Index");
+        }
 
+        [HttpPost]
+        public async Task<IActionResult> Deleted(Guid id)
+        {
+
+            var freelancer = await _context.project
+               .FirstOrDefaultAsync(m => m.prID == id);
+            return View();
+
+        }
         public async Task<IActionResult> viewmyProjects()
         {
             return View(await _context.project.ToListAsync());

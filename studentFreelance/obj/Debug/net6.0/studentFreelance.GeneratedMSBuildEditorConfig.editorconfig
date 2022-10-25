@@ -43,6 +43,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/ASP/studentFreelance/studentFreelance/Views/Allocate/completeWork.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWxsb2NhdGVcY29tcGxldGVXb3JrLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/ASP/studentFreelance/studentFreelance/Views/Allocate/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWxsb2NhdGVcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -139,8 +143,20 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvamVjdFxBZGQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/ASP/studentFreelance/studentFreelance/Views/Project/allocateWork.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvamVjdFxhbGxvY2F0ZVdvcmsuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/ASP/studentFreelance/studentFreelance/Views/Project/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvamVjdFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ASP/studentFreelance/studentFreelance/Views/Project/makeAllocated.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvamVjdFxtYWtlQWxsb2NhdGVkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ASP/studentFreelance/studentFreelance/Views/Project/makeDeleted.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvamVjdFxtYWtlRGVsZXRlZC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/ASP/studentFreelance/studentFreelance/Views/Project/viewmyProjects.cshtml]
@@ -173,6 +189,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [D:/ASP/studentFreelance/studentFreelance/Views/test/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcdGVzdFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ASP/studentFreelance/studentFreelance/Views/test/viewScore.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcdGVzdFx2aWV3U2NvcmUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/ASP/studentFreelance/studentFreelance/Views/_ViewImports.cshtml]

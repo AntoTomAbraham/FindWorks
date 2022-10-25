@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Razor;
 using Razorpay.Api;
+using System.Xml.Linq;
 
 namespace studentFreelance.Controllers
 {
@@ -26,8 +27,5 @@ namespace studentFreelance.Controllers
             return View();
         }
 
-        
-
     }
-
 }

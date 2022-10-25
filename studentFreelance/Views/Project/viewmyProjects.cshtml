@@ -16,7 +16,7 @@
 
 @foreach (var item in Model)
 {
-    if (item.email == @User.Identity?.Name){
+    if (item.email == @User.Identity?.Name && item.status == "true" ){
     <div class="card">
         <div class="card-header">
             @item.title
@@ -25,11 +25,13 @@
             <h5 class="card-title">@item.desc</h5>
             <p class="card-text">Project Deadline : @item.deadline</p>
             <p class="card-text">Project Budget   : @item.amount</p>
+               
                 <a asp-area="" asp-controller="Bid" asp-action="viewMybids" asp-route-id="@item.prID" class="btn btn-primary">View BIds</a>
-                <a href="#" class="btn btn-primary">Delete</a>
-                <a href="#" class="btn btn-primary">Delete</a>
+                <a href="makeDeleted/@item.prID" class="btn btn-primary">Delete</a>
+                <a href="makeAllocated/@item.prID" class="btn btn-primary">Mark Project as Allocated</a>
         </div>
     </div>
+    <br />
 }
 }
 
