@@ -59,6 +59,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWxsb2NhdGVcdmlld215RnJlZUFsbG8uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/ASP/studentFreelance/studentFreelance/Views/Bid/done.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmlkXGRvbmUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/ASP/studentFreelance/studentFreelance/Views/Bid/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmlkXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -161,6 +165,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [D:/ASP/studentFreelance/studentFreelance/Views/Project/viewmyProjects.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvamVjdFx2aWV3bXlQcm9qZWN0cy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ASP/studentFreelance/studentFreelance/Views/Project/viewproject.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvamVjdFx2aWV3cHJvamVjdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/ASP/studentFreelance/studentFreelance/Views/Project/viewProjects.cshtml]

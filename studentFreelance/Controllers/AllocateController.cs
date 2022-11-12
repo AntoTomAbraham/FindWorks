@@ -1,7 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using studentFreelance.Models;
-
 namespace studentFreelance.Controllers
 {
     public class AllocateController : Controller

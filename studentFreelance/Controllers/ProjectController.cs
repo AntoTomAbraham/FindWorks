@@ -17,6 +17,14 @@ namespace studentFreelance.Controllers
         {
             return View();
         }
+
+        public async Task<IActionResult> viewproject(Guid id)
+        {
+            ViewBag.MyString = id;
+            var pro = await _context.project.FirstOrDefaultAsync(m => m.prID == id);
+            if (pro == null) { }
+            return View(pro);
+        }
         [HttpPost]
         public async Task<IActionResult> Add(Project req)
         {

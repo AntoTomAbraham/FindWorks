@@ -32,8 +32,8 @@
                 <p class="card-text">Project Status : @item.status</p>
                 <p class="card-text">Project Deadline : @item.deadline</p>
                 <p class="card-text">Project Budget   : @item.amount</p>
-                <a href="#" class="btn btn-info">View Project</a>
                 <a class="btn btn-info" asp-area="" asp-controller="Chat" asp-action="Index">Chat</a>
+                <a class="btn btn-info" asp-area="" asp-controller="project" asp-action="viewproject" asp-route-id="@item.prID">View Project</a>
             </div>
         </div>
         <br />

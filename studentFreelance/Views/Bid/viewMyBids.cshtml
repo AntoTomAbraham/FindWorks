@@ -24,26 +24,44 @@
                 <tr>
                     <td>
                         @item.deadline
-                     </td>       
+                        @* <input class="form-check-input" type="checkbox" name="deadline" id="deadline" value="@item.deadline"> *@
+                    </td>       
                     <td>
                         @item.desc
+                        @* <input class="form-check-input" type="checkbox" name="amount" id="amount" value="@item.amount"> *@
                     </td>
                      <td>
                         @item.FRemail
+                        @* <input class="form-check-input" type="checkbox" name="prID" id="prID" value="@item.prID"> *@
                     </td>
                         <td>
                             @item.amount
+                            @*
+                                <input class="form-check-input" type="checkbox" name="desc" id="desc" value="@item.desc">
+                            *@
                             </td>
                         <td>
                         <a href="#" class="btn btn-primary">Message</a>
                     </td>
                     <td>
+                      
                         <form method="post" asp-action="AddAlocation">
+                            
                             <input class="form-check-input" type="checkbox" name="deadline" id="deadline" value="@item.deadline">
+                            <label>We will take 20% of the amount as commission</label>
+                            <br>
                             <input class="form-check-input" type="checkbox" name="amount" id="amount" value="@item.amount">
+                            <label>The communication should be throught our platform</label>
+                            <br>
                             <input class="form-check-input" type="checkbox" name="prID" id="prID" value="@item.prID">
+                            <label>The payment should be done through our platform</label>
+                            <br>
                             <input class="form-check-input" type="checkbox" name="desc" id="desc" value="@item.desc">
+                            <label>Incase of any cheating contact us</label>
+                            <br>
                             <input class="form-check-input" type="checkbox" name="FRemail" id="FRemail" value="@item.FRemail">
+                            <label>Continue if you agree our terms and condition</label>
+                            <br>
                             <button type="submit" class="btn btn-primary">Allocate Project</button>
                         </form>
                     </td>

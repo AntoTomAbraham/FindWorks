@@ -29,7 +29,8 @@
                 <p class="card-text">Project Budget   : @item.amount</p>
                 <!--  <a href="#" class="btn btn-info">View Project</a>-->
                 <a class="btn btn-info" asp-area="" asp-controller="Chat" asp-action="Index">Chat</a>
-                <a class="btn btn-info" asp-area="" asp-controller="payment" asp-action="pay">Pay now</a>           
+                <a class="btn btn-info" asp-area="" asp-controller="payment" asp-action="pay" asp-route-id="@item.FRemail">Pay now</a>
+                <a class="btn btn-info" asp-area="" asp-controller="project" asp-action="viewproject" asp-route-id="@item.prID" >View Project</a>
             </div>
         </div>
         <br />

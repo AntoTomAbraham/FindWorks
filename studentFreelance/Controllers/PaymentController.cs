@@ -17,9 +17,16 @@ namespace studentFreelance.Controllers
     {
         private const string _key = "rzp_test_C7ayx7PaJJkARf";
         private const string _secret = "4BdgF5N5FitWBRBA6QwZrVwi";
-
-        public IActionResult pay()
+        private readonly ClientDBcontext _context;
+        public PaymentController(ClientDBcontext context)
         {
+            _context = context;
+        }
+
+
+        public IActionResult pay(string id)
+        {
+            ViewBag.email = id;
             return View();
         }
         public IActionResult paynow()

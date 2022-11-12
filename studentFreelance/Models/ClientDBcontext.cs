@@ -10,5 +10,6 @@ namespace studentFreelance.Models
         }
 
         public DbSet<Client> client { get; set; }
+        public DbSet<Money> money { get; set; }
     }
 }

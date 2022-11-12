@@ -23,6 +23,11 @@ namespace studentFreelance.Controllers
             ids = ViewBag.MyString;
             return View();
         }
+        public async Task<IActionResult> done(Guid id)
+        {
+            
+            return View();
+        }
 
         [HttpPost]
         public async Task<IActionResult> Index(Bids req)
@@ -38,7 +43,7 @@ namespace studentFreelance.Controllers
                 };
             await biddb.bids.AddAsync(bid);
             await biddb.SaveChangesAsync();
-            return RedirectToAction("Index");
+            return RedirectToAction("done");
         }
 
         public async Task<IActionResult> viewMybids(Guid id)
@@ -63,7 +68,7 @@ namespace studentFreelance.Controllers
             };
             await biddb.allo.AddAsync(allow);
             await biddb.SaveChangesAsync();
-            return RedirectToAction("viewMyBids");
+            return RedirectToAction("done");
         }
 
     }

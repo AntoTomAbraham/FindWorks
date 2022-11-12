@@ -1,0 +1,41 @@
+﻿@model studentFreelance.Models.Project
+
+<form method="post" action="">
+    <div class="row mb-3">
+        <div class="col">
+            <div class="form-outline">
+                <label class="form-label" for="title">Title</label>
+                <input readonly type="text" id="title" class="form-control" asp-for="title" />
+            </div>
+        </div>
+        <div class="col">
+            <div class="form-outline">
+                <label class="form-label" for="amount" as>Amount</label>
+                <input readonly type="text" id="amount" class="form-control" asp-for="amount" />
+            </div>
+        </div>
+    </div>
+    <!-- Email input -->
+    <div class="form-outline mb-4">
+        <input readonly type="email" disabled value="@User.Identity?.Name" id="form3Example3" class="form-control" asp-for="email" />
+        <label class="form-label" for="form3Example3">Email address</label>
+    </div>
+
+    <div class="form-outline mb-4">
+        <input readonly type="desc" id="desc" class="form-control" asp-for="desc" />
+        <label  class="form-label" for="desc">Description</label>
+    </div>
+
+    <div class="form-outline mb-4">
+        <input readonly  type="number" id="deadline" class="form-control" asp-for="deadline" />
+        <label class="form-label" for="deadline">Deadline</label>
+    </div>
+    <div class="form-outline mb-4">
+        <input readonly class="form-control" id="prID" asp-for="prID"  />
+        <label class="form-label" for="deadline">Project ID</label>
+    </div>
+    <div class="form-outline mb-4">
+        <input readonly class="form-control" id="status" asp-for="status" />
+        <label class="form-label" for="deadline">Project Status</label>
+    </div>
+</form>
