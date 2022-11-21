@@ -11,9 +11,11 @@ namespace studentFreelance.Controllers
     {
         private readonly GigDbcontext biddb;
         private Guid ids;
-        public BidController(GigDbcontext biddB)
+        private readonly FreelancerDBcontext _context;
+        public BidController(GigDbcontext biddB, FreelancerDBcontext context)
         {
             this.biddb = biddB;
+            this._context = context;   
         }
         
         public async Task<IActionResult> Index(Guid id)
@@ -28,10 +30,20 @@ namespace studentFreelance.Controllers
             
             return View();
         }
+        public async Task<IActionResult> eror(Guid id)
+        {
+
+            return View();
+        }
 
         [HttpPost]
         public async Task<IActionResult> Index(Bids req)
         {
+
+            var project = await  _context.project.FindAsync(req.prID);
+            if (req.amount > project.amount) {
+                return RedirectToAction("eror");
+            }
             var bid = new Bids()
                 {
                     amount = req.amount,
